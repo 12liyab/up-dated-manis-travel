@@ -1,0 +1,834 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manis Travel Consult | Travel, Tourism & Visa Services</title>
+    <meta name="description" content="Manis Travel Consult - Your trusted partner for travel, tourism, visa assistance, and job placement in Europe. Travel, live, and work abroad.">
+    <link rel="icon" type="image/png" href="img/Golden wings of travel.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script>
+        // Prevent flash: apply saved theme before paint
+        (function() {
+            var t = localStorage.getItem('manis-theme');
+            if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- ========== PRELOADER ========== -->
+    <div id="preloader">
+        <img src="img/Golden wings of travel.png" alt="Loading..." class="preloader-logo">
+    </div>
+
+    <!-- ========== NAVBAR ========== -->
+    <nav class="navbar" id="navbar">
+        <div class="container nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="img/Golden wings of travel.png" alt="Manis Travel Consult Logo">
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <a href="https://wa.me/233598033234" target="_blank" rel="noopener noreferrer" class="nav-cta">
+                <i class="fab fa-whatsapp"></i> Chat With Us
+            </a>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark mode">
+                <i class="fas fa-moon"></i>
+                <i class="fas fa-sun"></i>
+            </button>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- ========== HERO SECTION ========== -->
+    <section class="hero" id="home">
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="img/hero-bg.mp4" type="video/mp4">
+            <source src="img/2024_12_24_12_39_IMG_8391.MOV" type="video/quicktime">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-particles" id="heroParticles"></div>
+        <div class="container hero-content">
+            <div class="hero-badge">
+                <i class="fas fa-shield-alt"></i> Licensed & Registered Travel Agency
+            </div>
+            <h1 class="hero-title">
+                Your Gateway to <span class="text-gold">Europe</span><br>
+                Starts Here
+            </h1>
+            <p class="hero-subtitle">
+                Travel, live, and work in Europe with confidence. We provide expert visa assistance, 
+                tourism packages, and direct job placements across 10+ European countries.
+            </p>
+            <div class="hero-cta-group">
+                <a href="#services" class="btn btn-primary">
+                    <i class="fas fa-compass"></i> Explore Services
+                </a>
+                <a href="#contact" class="btn btn-outline">
+                    <i class="fas fa-paper-plane"></i> Get Started
+                </a>
+            </div>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number" data-target="500">0</span>+
+                    <span class="stat-label">Clients Served</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="10">0</span>+
+                    <span class="stat-label">Countries</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-target="98">0</span>%
+                    <span class="stat-label">Success Rate</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll">
+            <a href="#services"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- ========== SERVICES SECTION ========== -->
+    <section class="section services" id="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">What We Offer</span>
+                <h2 class="section-title">Our <span class="text-gold">Services</span></h2>
+                <p class="section-subtitle">Comprehensive travel and immigration solutions tailored to your needs</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up">
+                    <div class="service-icon">
+                        <i class="fas fa-passport"></i>
+                    </div>
+                    <h3>Visa Assistance</h3>
+                    <p>Expert guidance through the entire visa application process. We handle documentation, appointments, and follow-ups for work, tourist, and student visas.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-plane-departure"></i>
+                    </div>
+                    <h3>Travel Services</h3>
+                    <p>Complete travel arrangements including flight bookings, travel insurance, airport transfers, and accommodation to make your journey seamless.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-umbrella-beach"></i>
+                    </div>
+                    <h3>Tourism Packages</h3>
+                    <p>Customized tourism packages for individuals, families, and groups. Explore the beauty of Europe with our carefully curated travel experiences.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <h3>Job Placement</h3>
+                    <p>Direct job opportunities with visa sponsorship in Europe. We connect skilled workers with employers across multiple industries and countries.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-file-alt"></i>
+                    </div>
+                    <h3>Document Processing</h3>
+                    <p>Professional handling of all required documentation — from passport applications to apostille services and document translation.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Consultation</h3>
+                    <p>One-on-one consultation sessions to assess your eligibility, recommend the best immigration pathway, and create a personalized travel plan.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Study Abroad</h3>
+                    <p>Comprehensive support for students seeking to study in Europe — from school selection and admission to student visa processing and pre-departure guidance.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="700">
+                    <div class="service-icon">
+                        <i class="fas fa-house-user"></i>
+                    </div>
+                    <h3>Relocation Guidance</h3>
+                    <p>End-to-end relocation assistance including accommodation search, settling-in support, cultural orientation, and local registration in your new country.</p>
+                    <a href="#contact" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== DESTINATIONS SECTION ========== -->
+    <section class="section destinations" id="destinations">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Where We Send You</span>
+                <h2 class="section-title">Popular <span class="text-gold">Destinations</span></h2>
+                <p class="section-subtitle">Travel, live, and work in these amazing European countries</p>
+            </div>
+            <div class="destinations-grid">
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/pl.png" alt="Poland Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Poland</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/de.png" alt="Germany Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Germany</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/cz.png" alt="Czech Republic Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Czech Republic</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/ro.png" alt="Romania Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Romania</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/lt.png" alt="Lithuania Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Lithuania</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/hr.png" alt="Croatia Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Croatia</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/hu.png" alt="Hungary Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Hungary</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/bg.png" alt="Bulgaria Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Bulgaria</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/rs.png" alt="Serbia Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Serbia</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/me.png" alt="Montenegro Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Montenegro</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+                <div class="destination-card">
+                    <div class="destination-img">
+                        <img src="https://flagcdn.com/w320/al.png" alt="Albania Flag">
+                    </div>
+                    <div class="destination-info">
+                        <h3>Albania</h3>
+                        <p>Work &amp; Travel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-images">
+                    <div class="about-img-main">
+                        <img src="img/2024_12_24_04_06_IMG_8343.jpg" alt="Manis Travel Consult Office">
+                    </div>
+                    <div class="about-img-secondary">
+                        <img src="img/s1.jpg" alt="Business Registration Certificates">
+                    </div>
+                    <div class="about-experience-badge">
+                        <span class="experience-number">5+</span>
+                        <span class="experience-text">Years of<br>Experience</span>
+                    </div>
+                </div>
+                <div class="about-content">
+                    <span class="section-tag">Who We Are</span>
+                    <h2 class="section-title">About <span class="text-gold">Manis Travel Consult</span></h2>
+                    <p class="about-text">
+                        Manis Travel Consult is a licensed and fully registered travel and tourism agency 
+                        dedicated to helping individuals achieve their dreams of traveling, living, and 
+                        working in Europe. 
+                    </p>
+                    <p class="about-text">
+                        With our Certificate of Incorporation and Certificate to Commence Business from the 
+                        Registrar General's Department, we operate with full legal authority and commitment 
+                        to providing transparent, reliable, and professional services.
+                    </p>
+                    <div class="about-features">
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Government Registered & Licensed</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Transparent Processing</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Dedicated Support Team</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>High Success Rate</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Multiple European Destinations</span>
+                        </div>
+                        <div class="about-feature">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Direct Job Placements</span>
+                        </div>
+                    </div>
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Contact Us Today
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VISION MISSION VALUES ========== -->
+    <section class="section vmv" id="vmv">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Who We Are</span>
+                <h2 class="section-title">Our <span class="text-gold">Vision &amp; Mission</span></h2>
+                <p class="section-subtitle">Driven by purpose, guided by values</p>
+            </div>
+            <div class="vmv-top">
+                <div class="vmv-card vmv-vision">
+                    <div class="vmv-icon"><i class="fas fa-eye"></i></div>
+                    <h3>Our Vision</h3>
+                    <p>To become a leading platform for travel and work experiences globally.</p>
+                </div>
+                <div class="vmv-card vmv-mission">
+                    <div class="vmv-icon"><i class="fas fa-bullseye"></i></div>
+                    <h3>Our Mission</h3>
+                    <p>Connecting global talent travelers with unique work opportunities worldwide.</p>
+                </div>
+            </div>
+            <div class="values-section">
+                <h3 class="values-heading">Our Core Values</h3>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-award"></i></div>
+                        <h4>Excellence</h4>
+                        <p>We strive for the highest standards in every service we deliver to our clients.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-chart-line"></i></div>
+                        <h4>Professional Growth</h4>
+                        <p>We invest in continuous learning and development to serve you better.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-lightbulb"></i></div>
+                        <h4>Innovation</h4>
+                        <p>We embrace new ideas and creative solutions for modern travel challenges.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="value-icon"><i class="fas fa-sync-alt"></i></div>
+                        <h4>Adaptability</h4>
+                        <p>We quickly adapt to changing travel regulations and client needs.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== VIDEO SHOWCASE BANNER ========== -->
+    <section class="video-showcase">
+        <video class="showcase-video" autoplay muted loop playsinline>
+            <source src="img/video-office.mp4" type="video/mp4">
+        </video>
+        <div class="showcase-overlay"></div>
+        <div class="container showcase-content">
+            <h2>See Our Office in Action</h2>
+            <p>A professional environment built for your travel success</p>
+        </div>
+    </section>
+
+    <!-- ========== PROCESS SECTION ========== -->
+    <section class="section process">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">How It Works</span>
+                <h2 class="section-title">Simple <span class="text-gold">Process</span></h2>
+                <p class="section-subtitle">Your journey to Europe in 4 easy steps</p>
+            </div>
+            <div class="process-grid">
+                <div class="process-step">
+                    <div class="process-number">01</div>
+                    <h3>Consultation</h3>
+                    <p>Book a free consultation. We assess your profile and recommend the best visa and travel options.</p>
+                </div>
+                <div class="process-connector"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="process-number">02</div>
+                    <h3>Documentation</h3>
+                    <p>We help you gather and prepare all required documents for a successful application.</p>
+                </div>
+                <div class="process-connector"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="process-number">03</div>
+                    <h3>Application</h3>
+                    <p>We submit your application and handle all follow-ups with the embassy or consulate.</p>
+                </div>
+                <div class="process-connector"><i class="fas fa-arrow-right"></i></div>
+                <div class="process-step">
+                    <div class="process-number">04</div>
+                    <h3>Travel</h3>
+                    <p>Visa approved! We arrange your flights, accommodation, and welcome you to your new destination.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== TESTIMONIALS SECTION ========== -->
+    <section class="section testimonials" id="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Client Stories</span>
+                <h2 class="section-title">What Our <span class="text-gold">Clients Say</span></h2>
+                <p class="section-subtitle">Real experiences from people we've helped travel abroad</p>
+            </div>
+            <div class="testimonials-slider">
+                <div class="testimonials-track" id="testimonialsTrack">
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"Manis Travel Consult made my dream of working in Poland a reality. The process was smooth, transparent, and they guided me every step of the way. Highly recommended!"</p>
+                        <div class="testimonial-author">
+                            <img src="client/E2.jpeg" alt="Emmanuel">
+                            <div>
+                                <h4>Emmanuel K.</h4>
+                                <span>Travelled to Poland</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I was skeptical at first, but Manis Travel proved to be very professional. They secured my visa and even helped me find a great job in Germany. Thank you so much!"</p>
+                        <div class="testimonial-author">
+                            <img src="client/GG.jpg" alt="George">
+                            <div>
+                                <h4>George A.</h4>
+                                <span>Travelled to Germany</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"The team at Manis Travel Consult is incredibly dedicated. They handled all my paperwork and made the entire visa process stress-free. I'm now happily settled in Czech Republic."</p>
+                        <div class="testimonial-author">
+                            <img src="client/W1-modified.png" alt="Winifred">
+                            <div>
+                                <h4>Winifred M.</h4>
+                                <span>Travelled to Czech Republic</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"From consultation to landing in Romania, Manis Travel was with me throughout. Their professionalism and attention to detail is unmatched. A truly reliable agency."</p>
+                        <div class="testimonial-author">
+                            <img src="client/R1.jpeg" alt="Richard">
+                            <div>
+                                <h4>Richard O.</h4>
+                                <span>Travelled to Romania</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"As a woman travelling alone, I needed an agency I could trust completely. Manis Travel gave me that confidence. They took care of everything and I'm now living my dream in Croatia!"</p>
+                        <div class="testimonial-author">
+                            <img src="client/PE.jpg" alt="Patricia">
+                            <div>
+                                <h4>Patricia E.</h4>
+                                <span>Travelled to Croatia</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-card">
+                        <div class="testimonial-stars">
+                            <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+                        </div>
+                        <p class="testimonial-text">"I got my work visa to Hungary through Manis Travel Consult and the whole experience was outstanding. They are honest, efficient, and truly care about their clients."</p>
+                        <div class="testimonial-author">
+                            <img src="client/L4.png" alt="Lawrence">
+                            <div>
+                                <h4>Lawrence B.</h4>
+                                <span>Travelled to Hungary</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials-controls">
+                    <button class="testimonial-btn prev" id="testimonialPrev" aria-label="Previous testimonial">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="testimonials-dots" id="testimonialDots"></div>
+                    <button class="testimonial-btn next" id="testimonialNext" aria-label="Next testimonial">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== GALLERY SECTION ========== -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Our Gallery</span>
+                <h2 class="section-title">See Us <span class="text-gold">In Action</span></h2>
+                <p class="section-subtitle">Moments from our journey of helping clients travel the world</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item gallery-item-wide">
+                    <img src="img/2024_12_24_04_06_IMG_8343.jpg" alt="Manis Travel Consult Office Team">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2024_12_24_04_16_IMG_8356.jpg" alt="Client Consultation Session">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2024_12_24_04_45_IMG_8362.jpg" alt="Team Meeting">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2024_12_24_04_45_IMG_8365.jpg" alt="Office Environment">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/video-consult.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-wide">
+                    <img src="img/2024_12_24_12_08_IMG_8388.jpg" alt="Client at Airport Ready to Travel">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2024_12_24_12_39_IMG_8390.jpg" alt="Airport Check-in">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item gallery-item-video">
+                    <video autoplay muted loop playsinline>
+                        <source src="img/video-clients.mp4" type="video/mp4">
+                    </video>
+                    <div class="gallery-overlay">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/picmanis3.jpg" alt="Manis Travel Consult Marketing">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/Visa-Application.jpg" alt="Visa Application">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/2024_12_24_04_05_IMG_8342.jpg" alt="CEO at Desk">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+                <div class="gallery-item">
+                    <img src="img/s1.jpg" alt="Business Certificates">
+                    <div class="gallery-overlay">
+                        <i class="fas fa-expand"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CTA BANNER ========== -->
+    <section class="cta-banner">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to Start Your Journey?</h2>
+                <p>Take the first step towards your European adventure. Contact us today for a free consultation.</p>
+                <div class="cta-buttons">
+                    <a href="tel:+233552277377" class="btn btn-primary">
+                        <i class="fas fa-phone"></i> Call: 055-227-7377
+                    </a>
+                    <a href="tel:+233598033234" class="btn btn-outline btn-outline-white">
+                        <i class="fas fa-phone"></i> Call: 059-803-3234
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Contact <span class="text-gold">Us</span></h2>
+                <p class="section-subtitle">We'd love to hear from you. Reach out and let's plan your trip!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Call Us</h4>
+                            <a href="tel:+233552277377">+233 055-227-7377</a>
+                            <a href="tel:+233598033234">+233 059-803-3234</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fab fa-whatsapp"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>WhatsApp</h4>
+                            <a href="https://wa.me/233598033234" target="_blank" rel="noopener noreferrer">059-803-3234</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Visit Us</h4>
+                            <p>Ashaley Botwe, Accra, Ghana</p>
+                            <p class="digital-address"><i class="fas fa-location-dot"></i> GD-090-5140</p>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-detail">
+                            <h4>Working Hours</h4>
+                            <p>Mon - Fri: 8:00 AM - 6:00 PM</p>
+                            <p>Sat: 9:00 AM - 3:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <h4>Follow Us</h4>
+                        <div class="social-links">
+                            <a href="https://www.facebook.com/manistravels" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.instagram.com/manistravels" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="https://www.tiktok.com/@manistravels" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                            <a href="https://wa.me/233598033234" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper">
+                    <form class="contact-form" id="contactForm">
+                        <h3>Send Us a Message</h3>
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Full Name" required>
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="form-group">
+                            <select id="service" name="service" required>
+                                <option value="" disabled selected>Select a Service</option>
+                                <option value="visa">Visa Assistance</option>
+                                <option value="travel">Travel Services</option>
+                                <option value="tourism">Tourism Package</option>
+                                <option value="job">Job Placement</option>
+                                <option value="consultation">Consultation</option>
+                                <option value="study">Study Abroad</option>
+                                <option value="relocation">Relocation Guidance</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <i class="fas fa-concierge-bell"></i>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" rows="5" placeholder="Tell us about your travel plans..." required></textarea>
+                            <i class="fas fa-comment-alt"></i>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <img src="img/Golden wings of travel.png" alt="Manis Travel Consult" class="footer-logo">
+                    <p>Your trusted partner for travel, tourism, visa assistance, and job placement in Europe. Licensed and registered in Ghana.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/manistravels" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/manistravels" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.tiktok.com/@manistravels" target="_blank" rel="noopener noreferrer" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                        <a href="https://wa.me/233598033234" target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#destinations">Destinations</a></li>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="#services">Visa Assistance</a></li>
+                        <li><a href="#services">Travel Services</a></li>
+                        <li><a href="#services">Tourism Packages</a></li>
+                        <li><a href="#services">Job Placement</a></li>
+                        <li><a href="#services">Study Abroad</a></li>
+                        <li><a href="#services">Relocation Guidance</a></li>
+                        <li><a href="#services">Consultation</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Destinations</h4>
+                    <ul>
+                        <li><a href="#destinations">Poland</a></li>
+                        <li><a href="#destinations">Germany</a></li>
+                        <li><a href="#destinations">Czech Republic</a></li>
+                        <li><a href="#destinations">Romania</a></li>
+                        <li><a href="#destinations">Croatia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Manis Travel Consult. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========== FLOATING WHATSAPP ========== -->
+    <a href="https://wa.me/233598033234" target="_blank" rel="noopener noreferrer" class="whatsapp-float" aria-label="Chat on WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- ========== BACK TO TOP ========== -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- ========== LIGHTBOX MODAL ========== -->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose" aria-label="Close lightbox">&times;</button>
+        <img src="" alt="Gallery Image" id="lightboxImg">
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
